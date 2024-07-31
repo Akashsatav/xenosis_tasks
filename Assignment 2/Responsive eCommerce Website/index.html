@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+       
+             <nav>
+            <!--Displays the logo or title of the site.-->
+         
+                <h1>Shopping Cart</h1>
+            
+            <!--Unordered list containing navigation links and a search bar.-->
+           
+                <a  href="">Home</a>
+                <a id="cloths" href="#cloth">Cloths</a>
+                <a id="blogs" href="#blog">Blogs</a>
+                <a id="reviews" href="#review">Review</a>
+                <a id="contacts" href="#contact">Contact Us</a>
+                <a  id="electronics" href="#electronics">Electronics</a>
+                <div class="search-container">
+                <input type="text" id="search" placeholder="Search for items...">
+                <button id="search-btn">Search</button>
+    </div>
+            
+            </nav>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for products...">
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="jewelery">Jewelry</option>
+                <option value="men's clothing">Men's Clothing</option>
+                <option value="women's clothing">Women's Clothing</option>
+            </select>
+        </div>
+    </header>
+      <!-- <div class="banner">
+            <a href="#" class="control_prev"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="#" class="control_next"><i class="fa-solid fa-arrow-right"></i></a>
+            <ul>
+                <img src="Images/ban1.jpg" alt="">
+                <img src="Images/ban2.jpg" alt="">
+                <img src="Images/ban3.jpg" alt="">
+                <img src="Images/ban4.jpg" alt="">
+                </ul>
+        </div> -->
+
+
+
+         <div class="banner">
+        <a href="#" class="control_prev"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="#" class="control_next"><i class="fa-solid fa-arrow-right"></i></a>
+        <div class="banner-wrapper">
+            <ul class="banner-list">
+                <li><img src="Images/ban1.jpg" alt="Banner 1"></li>
+                <li><img src="Images/ban2.jpg" alt="Banner 2"></li>
+                <li><img src="Images/ban3.jpg" alt="Banner 3"></li>
+                <li><img src="Images/ban4.jpg" alt="Banner 4"></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div id="product-list" class="product-list"></div>
+        <div id="cart" class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <button id="checkout" class="btn">Checkout</button>
+        </div>
+    </main>
+    
+     <div class="footer" id="footer">
+        <div class="text">
+            <h2>About US</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
+                 Saepe nostrum eaque facilis iste similique, provident placeat<br> voluptatem ab molestiae facere.</p>
+           
+        </div>
+         <div class="text">
+            <h2>Product</h2>
+            <p>our Design</p>
+            <p>Theme</p>
+            <p>Quality</p>
+            <p>Best Price</p>
+            
+        </div>
+         <div class="text">
+            <h2>Quality</h2>
+            <p>Customer</p>
+            <p>Review</p>
+            <p>Offer</p>
+            <p>Privacy Policy</p>
+           
+        </div>
+         <div class="text">
+            <h2>Adress</h2>
+            <p>4th Floore Gate</p>
+            <p>Abar Bazar</p>
+            <p>Bangolore</p>
+            
+        </div>
+        <div class="icons">
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://api.linkedin.com/login" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

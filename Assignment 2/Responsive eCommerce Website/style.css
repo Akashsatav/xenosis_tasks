@@ -1,0 +1,314 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+     background-color: rgb(244, 244, 244);
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    min-height: 100%;
+    width: 100%;
+    background-color: #28a745;
+}
+/* .header{
+    max-width: 100%;
+    max-height: 100%;
+   
+} */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:transparent;
+    margin-top: 20px;
+    display: flex;
+    border-bottom: 1px solid red;
+   
+}
+nav h1{
+    color: orangered;
+    text-shadow: 1px 1px;
+    font-size: 40px;
+}
+nav a{
+    font-weight:bold;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+
+  
+
+}
+
+.search-container input {
+  padding: 0.5em;
+  width: 200px;
+  border: 1px solid black;
+}
+
+.search-container button {
+  padding: 0.5em;
+  background-color: orangered;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0 20px;
+
+}
+
+.search-container button:hover {
+  background-color: #777;
+}
+
+/* .main-section{
+    width: 100%;
+    min-height: 80vh;
+    background-color: #777;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+} */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.search-container input,
+.search-container select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+        border-bottom: 1px solid red;
+}
+/* .banner{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+/* Uses flexbox for layout in the ul within the banner and hides vertical overflow.*/
+.banner ul{
+    display: flex;
+    overflow-y: hidden;
+}
+
+/*Ensures images in the banner ul have a minimum width of 100%.*/
+.banner  ul img{
+    min-width: 100%;
+    height: 500px;
+    padding: 10px;
+}
+
+/*Styles anchor tags in the banner, positioning them absolutely at 50% height,
+ setting z-index, padding, background, color, removing underline, setting font weight and size, 
+and changing cursor to pointer.*/
+.banner a{
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    padding: 5vh 1vh;
+    background: transparent;
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+    
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.banner-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s ease;
+}
+
+.banner-list li {
+    min-width: 100%;
+}
+
+.banner-list img {
+    width: 100%;
+    display: block;
+}
+
+.control_prev, .control_next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.control_prev {
+    left: 10px;
+}
+
+.control_next {
+    right: 10px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: rem;
+    width: 100%;
+    margin-top: 50px;
+    
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px orangered;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2rem;
+    border-radius: 20px;
+}
+
+.product-card h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product-card p {
+    color: #333;
+}
+
+.cart {
+    position: fixed;
+    right: 1rem;
+    top: 5rem;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+    display: none;
+    z-index: 1000;
+    
+}
+
+.cart h2 {
+    margin-top: 0;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart li:last-child {
+    border-bottom: none;
+}
+
+.cart .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #28a745;
+    color: #a24545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cart .btn:hover {
+    background-color: #218838;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: orangered; */
+    color: black;
+    padding: 55px;
+    margin-top: 55px;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+/*Sets the color and font size of anchor tags within the icons section.*/
+.icons a{
+    color:black
+}
+
+
+@media (max-width: 600px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
